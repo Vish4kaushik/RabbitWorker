@@ -1,0 +1,17 @@
+{
+  "name": "microservice-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start:producer": "cd producer && npx tsc && node dist/producer.js",
+    "start:consumer": "cd consumer && npx tsc && node dist/consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.6",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.3.0"
+  }
+}
